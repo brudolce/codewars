@@ -1,5 +1,5 @@
 # Codewars
-<p>Repository for my solutions of Codewars katas.</p>
+<p>Repository for my solutions to Codewars katas.</p>
 <p>Katas are coding challenges provided by codewars and help in daily programings kills:<br>
 https://www.codewars.com/kata<br>
 The site works like a karate dojo, you earn belts and ranks by solving more and more complex challenges.</p>
