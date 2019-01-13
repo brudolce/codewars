@@ -1,6 +1,6 @@
 # codewars
 <p>My solutions of Codewars katas</p>
-<p>I code in JavaScript and Python and my cuurent rank is:</p><a target="_blank" href="https://www.codewars.com/r/C6HkBg"><img src="https://www.codewars.com/users/markusende/badges/large" alt="codewars badge large" /></a>
+<p>I code in JavaScript and Python.</p><br><a target="_blank" href="https://www.codewars.com/r/C6HkBg"><img src="https://www.codewars.com/users/brudolce/badges/large" alt="codewars badge large" /></a><br><br>
 
 <p>Katas are coding challenges provided by codewars and help in daily programings kills:<br>
 https://www.codewars.com/kata<br>
