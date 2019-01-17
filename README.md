@@ -6,7 +6,7 @@ The site works like a karate dojo, you earn belts and ranks by solving more and 
  This may help you in your coding.</br>
 Feel free to contact me if you have better ideas.</br>
 
-I code in JavaScript and Python.</br>
+I code in JavaScript and Python.</br></br>
 <a target="_blank" href="https://www.codewars.com/users/brudolce"><img src="https://www.codewars.com/users/brudolce/badges/large" alt="codewars badge large" /></a><br><br>
 
 
