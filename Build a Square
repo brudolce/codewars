@@ -18,7 +18,6 @@ function generateShape(int){
   return sqr 
 }
 
-
 // solution2
 function generateShape(n){
   return ("+".repeat(n)+"\n").repeat(n).trim()
