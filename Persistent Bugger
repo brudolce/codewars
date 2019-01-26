@@ -9,6 +9,7 @@ function persistence(num) {
     mul(doidera);
     }
   }
+  
 mul(num)
   return count 
 }
