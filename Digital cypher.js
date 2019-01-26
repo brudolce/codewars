@@ -6,5 +6,6 @@ function encode(str,  n){
     let b = (str[i].charCodeAt() - 96)
     arr.push(a + b)
   }
+  
     return arr;
 }
