@@ -4,7 +4,7 @@
 //repeated that many times. For example:
 
 function repeater(string, n){
-    newa = ""
+    newa = ''
     for(i=1;i<=n;i+=1){
         newa += string
     }
