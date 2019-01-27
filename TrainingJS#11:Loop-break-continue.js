@@ -9,5 +9,6 @@ function grabDoll(dolls){
     break;
     }
   }
+  
   return bag;
 }
