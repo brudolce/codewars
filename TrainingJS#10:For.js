@@ -5,5 +5,6 @@ function pickIt(arr){
       } else {odd.push(arr[i])
       }
     }
+    
     return [odd,even];
   }
