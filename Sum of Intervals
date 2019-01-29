@@ -5,6 +5,5 @@ function sumIntervals(intervals){
       arr[i] = 1;
     }
   });
-  
   return arr.reduce((acc, z) => acc + z);
 }
