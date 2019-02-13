@@ -3,7 +3,7 @@ function tribonacci(signature,n){
       return signature.slice(0,n);
     }
     let arr = signature;  
-    for (var i = 3; i < n; i++) {
+    for (let i = 3; i < n; i += 1) {
       arr.push((arr[i-1] + arr[i-2] + arr[i-3]));
     }
     
