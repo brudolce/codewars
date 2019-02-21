@@ -1,0 +1,26 @@
+function balance(book) {
+  let regFloat = parseFloat(book.match(/\d+(\.\d+)?/)[0]) 
+  const result = [`Original Balance: ${regFloat.toFixed(2)}`];
+  let totalExpense = 0;
+  let counter = 0;
+  
+  //array of original string
+  const arr = book.split('\n').slice(1)
+  console.log(arr);
+  
+  //filtering array 
+  for (let j of arr){
+    const Regex = /^(\d+)\s([a-zA-Z]+)[^\d]+(\d+\.\d+)[^\d]*$/
+    let s=j.match(Regex)
+    if (s){
+      result.push(`${s[1]} ${s[2]} ${(+s[3]).toFixed(2)} Balance ${(regFloat-=parseFloat(s[3])).toFixed(2)}`)
+      totalExpense+=parseFloat(s[3])
+      console.log(totalExpense)
+      counter += 1
+    }
+  }
+  result.push(`Total expense  ${totalExpense.toFixed(2)}`)
+  result.push(`Average expense  ${(totalExpense/counter).toFixed(2)}`)
+  
+  return result.join('\r\n')
+}
