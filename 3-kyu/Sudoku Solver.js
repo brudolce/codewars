@@ -17,7 +17,6 @@ function isvaild(i, j, puzzle, num)
   }
   return true;
 }
-
 function sudoku(puzzle) {
   let flag = 0;
   function dfs(puzzle, index)
