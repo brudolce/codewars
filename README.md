@@ -1,7 +1,7 @@
 # Codewars
 <a target="_blank" href="https://www.codewars.com/users/brudolce"><img src="https://www.codewars.com/users/brudolce/badges/large" alt="codewars badge large" /></a>
 
-Repository for my solutions to Codewars challenges (katas).
+Repository for my solutions to Codewars challenges (katas). </br>
 https://www.codewars.com/kata
 
 ### My Published Katas
