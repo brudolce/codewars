@@ -3,6 +3,9 @@
 
 Repository for my solutions to Codewars challenges (katas): </br>
 Katas are divided by difficulty, the lower the kyu, the more difficult the challenge is.</br></br>
+
+
+### Katas information and lists
 https://github.com/Codewars/codewars.com/wiki/Kata-Ranking </br>
 https://www.codewars.com/kata </br>
 </br>
