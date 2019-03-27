@@ -2,7 +2,8 @@
 <a target="_blank" href="https://www.codewars.com/users/brudolce"><img src="https://www.codewars.com/users/brudolce/badges/large" alt="codewars badge large" /></a>
 
 Repository for my solutions to Codewars challenges (katas): </br>
-Katas are divided by difficulty, the lower the kyu, the more difficult the challenge is.</br></br>
+Katas are divided by difficulty, the lower the kyu, the more difficult the challenge is.</br>
+Main languages: JavaScript and Python. There are a couple of stuff in Java, Ruby and SQL</br></br>
 
 
 ### Katas information and lists
