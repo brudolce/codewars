@@ -19,6 +19,7 @@ function validateBattlefield(field) {
     dfs(i+1, j-1, field, 'dl'); // check for contact
     dfs(i+1, j+1, field, 'dr'); // check for contact
   }
+  
   for (let i = 0; i < field.length; i += 1) {
     for (let j = 0; j < field[0].length; j += 1) {
       if (field[i][j] == 1) {
