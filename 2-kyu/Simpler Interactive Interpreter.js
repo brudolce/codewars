@@ -16,20 +16,19 @@ class Interpreter {
     let rDigit = /^[-+]?\d+(\.\d+)?$/;
     let rVariable = /^[_a-z][_a-z0-9]*$/;
 
-    /* Attribution */
-    
+    // Attribution
     if (exec = rAttribution.exec(s)) {
       let c = this.input(exec[2]);
       this.variables[exec[1]] = c;
       return c;
     }
 
-    /* Parentesis */
+    // Parentesis
     while (exec = rParentesis.exec(s)) {
       s = s.replace(rParentesis, this.input(exec[1]));
     }
 
-    /* Sum and Subtraction */
+    // Sum and Subtraction
     while (exec = rTerm.exec(s)) {
       let leftSide = this.input(exec[1]);
       let rightSide = this.input(exec[3]);
@@ -39,7 +38,7 @@ class Interpreter {
       s = s.replace(rTerm, result);
     }
 
-    /* Multiplication and division */
+    // Multiplication and division
     while (exec = rFactor.exec(s)) {
       let leftSide = this.input(exec[1]);
       let rightSide = this.input(exec[3]);
@@ -49,12 +48,12 @@ class Interpreter {
       s = s.replace(rFactor, result);
     }
 
-    /* Value */
+    // Value
     if (exec = rDigit.exec(s)) {
       return Number(exec[0]);
     }
 
-    /* Variable */
+    // Variable
     if (exec = rVariable.exec(s)) {
       let variable = this.variables[exec[0]];
       
