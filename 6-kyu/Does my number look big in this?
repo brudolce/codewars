@@ -1,0 +1,20 @@
+//Long Solution
+function narcissistic(value) {
+  if (!parseInt(value)) return `${value} is not an integer`
+
+  const numberDestructured = [...value.toString()].map(num => Number(num))
+  const result = numberDestructured.reduce(
+    (acc, e) =>
+      acc + Math.pow(e, numberDestructured.length),
+    0
+  )
+
+  return value === result
+}
+
+//Short Solution
+function narcissistic( value ) {
+  return ('' + value).split('').reduce(function(p, c){
+    return p + Math.pow(c, ('' + value).length)
+    }, 0) == value;
+}
