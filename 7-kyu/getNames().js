@@ -5,3 +5,9 @@ function getNames(data){
   }
   return result
 }
+
+//with map
+
+function getNames(data){
+  return data.map(x=>x.name);
+}
