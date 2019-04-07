@@ -8,3 +8,8 @@ function solution(string) {
     }
   }).join('')
 }
+
+// clever
+function solution(string) {
+  return(string.replace(/([A-Z])/g, ' $1'));
+}
