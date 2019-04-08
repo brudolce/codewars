@@ -15,3 +15,11 @@
     
     return pile.length === 0;
  }
+
+
+// smart dudes doing fancy tricks
+
+function groupCheck(braces){
+   while(/\(\)|\[\]|\{\}/g.test(braces)){braces = braces.replace(/\(\)|\[\]|\{\}/g,"")}
+ return !braces.length;
+ }
