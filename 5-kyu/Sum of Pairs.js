@@ -5,10 +5,10 @@ function sum_pairs(ints, s) {
     if (lastNumber && lastNumber === ints[i]) continue
     lastNumber = ints[i]
 
-    const sliced = ints.slice(0, i)
-    const sumIndex = sliced.indexOf(s - ints[i])
+    const sl = ints.slice(0, i)
+    const sumIndex = sl.indexOf(s - ints[i])
 
-    if (sumIndex !== -1) return [sliced[sumIndex], ints[i]]
+    if (sumIndex !== -1) return [sl[sumIndex], ints[i]]
   }
 }
 
