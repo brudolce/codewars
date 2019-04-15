@@ -19,8 +19,11 @@ def last_digit(n1, n2):
     else:
         return data[n1][n2%len(data[n1]) - 1]
         
-#clever
-        
+#clever1
+def last_digit(n1, n2):
+    return (n1 % 10) ** (n2 % 4 + 4 * bool(n2)) % 10
+
+#clever2
 rules = {
     0: [0,0,0,0],   
     1: [1,1,1,1],
