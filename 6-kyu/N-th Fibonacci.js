@@ -6,7 +6,7 @@ function nthFibo(n) {
  return res[n-1]
 }
 
-//clever stuff
+//clever solution
 function nthFibo(n) {
   return Math.round((1/Math.sqrt(5))*Math.pow((1+Math.sqrt(5))/2,n-1))
 } 
