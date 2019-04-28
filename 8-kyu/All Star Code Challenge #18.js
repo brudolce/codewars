@@ -5,3 +5,7 @@ function strCount(str, letter){
   }
   return obj[letter]||0
 }
+
+
+//one line solution
+const strCount = (str, letter) =>  str.split(letter).length-1
