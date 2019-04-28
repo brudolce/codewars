@@ -13,3 +13,10 @@ function longestSlideDown (pyramid) {
   }
   return pyramidSum[0][0];
 }
+
+//clever stuff
+function longestSlideDown (pyramid) {
+  return pyramid.reduceRight((last,current)=>current.map(
+    (v,i)=>v+Math.max(last[i],last[i+1])
+  ))[0];
+}
