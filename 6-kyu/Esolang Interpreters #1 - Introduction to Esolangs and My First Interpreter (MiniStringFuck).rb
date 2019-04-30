@@ -1,3 +1,9 @@
+##clever stuff from code wars
+def my_first_interpreter(code, n = (0..255).cycle)
+  code.delete('^+.').chars.map { |char| char == '.' ? n.peek.chr : n.next && '' }.join
+end
+
+##my dummy sol
 def my_first_interpreter(code)
   output = []
   memory_cell = 0
