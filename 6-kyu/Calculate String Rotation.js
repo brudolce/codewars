@@ -11,8 +11,13 @@ function shiftedDiff(first,second){
   return -1;
 }
 
-//clever stuff
+//clever stuff 1
 function shiftedDiff(first, second) {
   if (first.length != second.length) return -1
   return (second + second).indexOf(first)
+}
+
+//clever stuff 2
+function shiftedDiff(first, second) {
+  return (first.length == second.length) ? (second+second).indexOf(first) : -1;
 }
