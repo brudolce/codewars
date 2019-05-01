@@ -63,7 +63,7 @@ function listPosition(word) {
 }
 
 
-// not fast enought
+// not fast enough
 function listPosition(word) {
   let w = word;
   word = word.split('');
