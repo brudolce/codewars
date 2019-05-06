@@ -1,0 +1,5 @@
+function strongEnough(earthquake, age) {
+  return earthquake.reduce((acc,arr)=>acc * arr.reduce((a,e)=>a+e,0) ,1) < 1000 * Math.pow(.99, age)
+  ? 'Safe!'
+  : 'Needs Reinforcement!'
+}
