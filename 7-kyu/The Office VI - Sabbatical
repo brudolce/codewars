@@ -12,3 +12,7 @@ function sabb(x, val, happ) {
   if (lCounter === 3) scoreCounter + 3; 
   return scoreCounter < 22 ? 'Back to your desk, boy.' : 'Sabbatical! Boom!'
 } 
+
+//solution 2
+const sabb = (x, val, happ) => x.split('').reduce((s,a)=> s + 'sabbatical'.includes(a) , 0) + val + happ > 22 ?
+           'Sabbatical! Boom!' :  'Back to your desk, boy.'
