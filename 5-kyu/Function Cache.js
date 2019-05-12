@@ -22,4 +22,17 @@ function cache(func) {
 }
 
 
+//short solution
+function cache(func) {
+  var calls = {};
+  return function() {
+    var key = JSON.stringify(arguments);
+    if (!(key in calls)) {
+      calls[key] = func.apply(null, arguments);
+    }
+    return calls[key];
+  };
+}
+
+
 //this one I used a lot of help from google and stack overflow. To me was not quite clear how to do what was asked.
