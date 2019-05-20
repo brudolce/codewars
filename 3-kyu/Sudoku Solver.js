@@ -1,5 +1,4 @@
-function isvaild(i, j, puzzle, num)
-{
+function isvaild(i, j, puzzle, num) {
   for (let k = 0; k < puzzle[i].length; k += 1) {
     if (puzzle[i][k] == num)
       return false;
