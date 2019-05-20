@@ -6,3 +6,11 @@ Object.prototype.hash = function(string) {
     }
   return property ? property : undefined
 }
+
+//smart ass
+Object.prototype.hash = function(string) {
+  var arr = string.split('.');
+  return arr.reduce(function(pv, cv){
+    return (pv) ? pv[cv] : pv;
+  }, this);
+}
