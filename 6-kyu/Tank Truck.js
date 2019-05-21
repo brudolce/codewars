@@ -12,3 +12,13 @@ function tankvol(h, d, vt) {
       return Math.floor(vt - vt / 2 * (Math.PI * r * r * 2 * theta / Math.PI - width * (r - h) / 2) / (Math.PI * r * r));
     }
 }
+
+//clever solution
+function tankvol(h, d, vt) {
+  let r = d / 2;
+  let w = vt / (r * r * Math.PI);
+  let a = (r * r) * Math.acos(1 - h / r) 
+        - (r - h) * Math.sqrt(2 * r * h - h * h); 
+  
+  return w * a | 0;
+}
