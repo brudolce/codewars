@@ -5,3 +5,13 @@ multiplicationTable = function(size) {
   for (let i = 1; i <= size; i += 1) table.push(blueP.map(x=>x*i));
   return table
 }
+
+//smartass solution
+multiplicationTable = function(size) {
+
+  return Array.apply(null, new Array(size)).map(function(val, i) {
+    return Array.apply(null, new Array(size)).map(function(val, j) {
+      return (i+1) * (j+1);
+    });
+  });
+}
