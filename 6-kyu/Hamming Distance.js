@@ -5,3 +5,8 @@ function hamming(a,b) {
   }
   return count
 }
+
+
+//extra solution
+
+const hamming = (a,b) => [...a].reduce((c,e,i)=> c + (a[i] != b[i]),0); 
