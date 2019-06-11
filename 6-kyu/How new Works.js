@@ -1,0 +1,1 @@
+let myObj = new MyObject()
