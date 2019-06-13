@@ -6,3 +6,9 @@ function encrypt(text, rule) {
   }
   return str
 };
+
+
+//clever solution
+function encrypt(text, rule) {
+  return text.replace(/./g, c => String.fromCharCode((c.charCodeAt() + rule) & 255))
+}
