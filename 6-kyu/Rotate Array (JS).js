@@ -1,4 +1,5 @@
-function rotate(array, n) {
-  n = n % array.length
-  return array.slice(-n).concat(array.slice(0, -n))
+//fancy shit
+function rotate(array, p) {
+  p = p % array.length
+  return array.slice(-p).concat(array.slice(0, -p))
 }
