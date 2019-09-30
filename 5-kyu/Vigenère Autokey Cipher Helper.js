@@ -1,3 +1,26 @@
+//best practice solution
+function VigenèreAutokeyCipher(origKey, abc) {
+  this.encode = function(str) {
+    var ignore = 0, key = origKey;
+    return str.split('').map(function(v, i) {
+      if(abc.indexOf(v) == -1) {ignore++; return v;}
+      key = key.concat(v);
+      return abc[(abc.indexOf(v) + abc.indexOf(key[i - ignore])) % abc.length];
+    }).join('');
+  };
+  this.decode = function(str) {
+    var ignore = 0, key = origKey;
+    return str.split('').map(function(v, i) {
+      if(abc.indexOf(v) == -1) {ignore++; return v;}
+      var ind = abc.indexOf(v) - abc.indexOf(key[i - ignore]),
+          out = abc[ind < 0 ? ind + abc.length : ind]
+      key = key.concat(out);
+      return out;
+    }).join('');
+  };
+}
+
+//coding coding coding
 function VigenèreAutokeyCipher(key, abc) {
   this.encode = function (str) {
     let res = '', i = 0;    
