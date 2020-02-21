@@ -1,7 +1,6 @@
 import numpy as np
 import queue
 
-
 class Field:
     def __init__(self, field):
         self.original = field
@@ -227,4 +226,5 @@ def break_pieces(shape):
     field = Field(shape)
     print(field)
     squares = field.break_apart()
-    [print(square) for square
+    [print(square) for square in squares]
+    return squares
