@@ -1,7 +1,6 @@
 import numpy as np
 import queue
 
-
 def compare(a, b):
     if a == b:
         return 0
@@ -9,7 +8,6 @@ def compare(a, b):
         return 1
     if a < b:
         return -1
-
 
 class Puzzle:
     def __init__(self, puzzle):
