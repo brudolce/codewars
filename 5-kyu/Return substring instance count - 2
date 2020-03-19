@@ -1,0 +1,9 @@
+function searchSubstr(fullText, searchText, allowOverlap) {
+  if(searchText == '') return 0;
+  var re = new RegExp(searchText, 'g');
+  if(allowOverlap) {
+    var count = 0;
+    while(re.exec(fullText)) {count++; re.lastIndex -= searchText.length - 1;}
+    return count;
+  } else return (fullText.match(re) || []).length || 0;
+}
