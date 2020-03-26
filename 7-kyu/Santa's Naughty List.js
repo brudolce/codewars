@@ -1,5 +1,1 @@
-function findChildren(santasList, children) {
-  let arr = [];
-  santasList.map(v => (children.includes(v) ? arr.push(v) : null));
-  return arr.sort();
-}
+const findChildren = (santasList, children) => [...new Set(children.filter(name => santasList.includes(name)).sort())]
