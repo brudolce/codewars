@@ -66,7 +66,6 @@ class Puzzle:
             self.solve_number(case, solution)
 
         # Now the hard solve with line[-2:] and solutions[-2:]
-        # Ponemos el 4 y el 3 en un lugar seguro
         self.solve_number(helper_cases[2], solutions[-1], solve=False)
         self.solve_number(helper_cases[3], solutions[-2], solve=False)
 
