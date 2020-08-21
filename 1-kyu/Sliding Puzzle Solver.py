@@ -271,7 +271,6 @@ class Case:
     def distance_to(self, other):
         return abs(self.y-other.y)+abs(self.x-other.x)
 
-
 def slide_puzzle(array):
     # Code-execution function
     puzzle = Puzzle(array)
