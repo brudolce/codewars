@@ -3,7 +3,7 @@
 
 Repository for my solutions to Codewars challenges (katas): </br>
 Katas are divided by difficulty, the lower the kyu, more difficult the challenge is.</br>
-Main languages used in solutions: JavaScript, Python amd Java. </br></br>
+Main languages used in solutions: JavaScript, Python and Java. </br></br>
 
 
 ### Katas information and lists
